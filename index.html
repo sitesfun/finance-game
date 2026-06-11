@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Фінансова гра</title>
+</head>
+
+<body>
+    <div class="cont">
+        <header>
+            <h1>💸 Фінансова грамотність</h1>
+        </header>
+
+        <div class="player-card">
+            <div class="player-name">
+                <div class="avatar">🎮</div>
+                <div>
+                    <div class="player-label">Гравець</div>
+                    <div id="player_name">User</div>
+                </div>
+            </div>
+            <div class="savings-badge">
+                <div class="savings-label">Заощадження</div>
+                <div class="savings-value"><span id="savings">0</span> грн</div>
+            </div>
+        </div>
+
+        <div class="dream-section">
+            <div class="dream-icon">⭐</div>
+            <div class="dream-info">
+                <div class="dream-label">Мрія</div>
+                <div id="dream_item">Бургер</div>
+            </div>
+            <div style="text-align:right">
+                <div class="dream-label">Ціль</div>
+                <div style="font-size:18px;font-weight:900;color:#fff"><span id="meta_number">2500</span> грн</div>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-title">Прогрес</span>
+                <span class="progress-numbers">
+                    <span id="balance-display">0</span> / <span id="meta_display">2500</span> грн
+                </span>
+            </div>
+            <div class="progress">
+                <div id="bar"></div>
+            </div>
+        </div>
+
+        <div class="balance-row">
+            <span class="balance-label">💳 Накопичення:</span>
+            <span id="balance">0</span>
+            <span class="balance-label">грн</span>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-primary" id="earnBtn">💰 Заробити</button>
+            <button class="btn btn-secondary" id="addMoney">🏦 Додати в банк</button>
+            <button class="btn btn-ghost" id="postpone">↩️ Повернути кошти</button>
+            <button class="btn btn-event" id="event">🎲 Подія</button>
+        </div>
+
+        <footer>
+            <p class="text">copyright Rezmit</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
